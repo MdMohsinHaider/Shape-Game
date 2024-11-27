@@ -22,13 +22,14 @@ public class Triangle implements  TwoDShape{
 
     @Override
     public void getArea() {
-        double s = (side1+side2+side3)/2;
-        double area = Math.sqrt(s*(s-side1)*(s-side2)*(s-side3));
+        double s=(side1+side2+side3)/2;
+        double area=Math.sqrt(s*(s-side1)*(s-side2)*(s-side3));
+        System.out.println("Area of Triangle is: "+area+" Sq. Unit");
     }
 
     @Override
     public void getPerimeter() {
-        double perimeter = (side1+side2+side3);
-        System.out.println(" Perimeter of Triangle is "+perimeter);
+        double perimeter=(side1+side2+side3);
+        System.out.println("Perimeter of Triangle is: "+perimeter+" Unit");
     }
 }
